@@ -1,0 +1,5 @@
+C:/Users/MarieJuana/CLionProjects/CompilationPrograms/cmake-build-debug/CMakeFiles/Activity1_Midterms.dir
+C:/Users/MarieJuana/CLionProjects/CompilationPrograms/cmake-build-debug/CMakeFiles/Actvity2_Midterms.dir
+C:/Users/MarieJuana/CLionProjects/CompilationPrograms/cmake-build-debug/CMakeFiles/Assignment1_Midterms.dir
+C:/Users/MarieJuana/CLionProjects/CompilationPrograms/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/MarieJuana/CLionProjects/CompilationPrograms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
