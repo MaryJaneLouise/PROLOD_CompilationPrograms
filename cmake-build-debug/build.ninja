@@ -140,6 +140,39 @@ build Assignment1_Midterms.exe: C_EXECUTABLE_LINKER__Assignment1_Midterms_Debug 
   TARGET_PDB = Assignment1_Midterms.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target Quiz1_Midterm
+
+
+#############################################
+# Order-only phony target for Quiz1_Midterm
+
+build cmake_object_order_depends_target_Quiz1_Midterm: phony || CMakeFiles/Quiz1_Midterm.dir
+
+build CMakeFiles/Quiz1_Midterm.dir/Quizzes/Midterms/Quiz1.c.obj: C_COMPILER__Quiz1_Midterm_Debug C$:/Users/MarieJuana/CLionProjects/CompilationPrograms/Quizzes/Midterms/Quiz1.c || cmake_object_order_depends_target_Quiz1_Midterm
+  DEP_FILE = CMakeFiles\Quiz1_Midterm.dir\Quizzes\Midterms\Quiz1.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Quiz1_Midterm.dir
+  OBJECT_FILE_DIR = CMakeFiles\Quiz1_Midterm.dir\Quizzes\Midterms
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Quiz1_Midterm
+
+
+#############################################
+# Link the executable Quiz1_Midterm.exe
+
+build Quiz1_Midterm.exe: C_EXECUTABLE_LINKER__Quiz1_Midterm_Debug CMakeFiles/Quiz1_Midterm.dir/Quizzes/Midterms/Quiz1.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Quiz1_Midterm.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Quiz1_Midterm.exe
+  TARGET_IMPLIB = libQuiz1_Midterm.dll.a
+  TARGET_PDB = Quiz1_Midterm.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target MidtermExam
 
 
@@ -148,11 +181,11 @@ build Assignment1_Midterms.exe: C_EXECUTABLE_LINKER__Assignment1_Midterms_Debug 
 
 build cmake_object_order_depends_target_MidtermExam: phony || CMakeFiles/MidtermExam.dir
 
-build CMakeFiles/MidtermExam.dir/Activities/Midterms/Exam.c.obj: C_COMPILER__MidtermExam_Debug C$:/Users/MarieJuana/CLionProjects/CompilationPrograms/Activities/Midterms/Exam.c || cmake_object_order_depends_target_MidtermExam
-  DEP_FILE = CMakeFiles\MidtermExam.dir\Activities\Midterms\Exam.c.obj.d
+build CMakeFiles/MidtermExam.dir/Exams/MidtermExam.c.obj: C_COMPILER__MidtermExam_Debug C$:/Users/MarieJuana/CLionProjects/CompilationPrograms/Exams/MidtermExam.c || cmake_object_order_depends_target_MidtermExam
+  DEP_FILE = CMakeFiles\MidtermExam.dir\Exams\MidtermExam.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\MidtermExam.dir
-  OBJECT_FILE_DIR = CMakeFiles\MidtermExam.dir\Activities\Midterms
+  OBJECT_FILE_DIR = CMakeFiles\MidtermExam.dir\Exams
 
 
 # =============================================================================
@@ -162,7 +195,7 @@ build CMakeFiles/MidtermExam.dir/Activities/Midterms/Exam.c.obj: C_COMPILER__Mid
 #############################################
 # Link the executable MidtermExam.exe
 
-build MidtermExam.exe: C_EXECUTABLE_LINKER__MidtermExam_Debug CMakeFiles/MidtermExam.dir/Activities/Midterms/Exam.c.obj
+build MidtermExam.exe: C_EXECUTABLE_LINKER__MidtermExam_Debug CMakeFiles/MidtermExam.dir/Exams/MidtermExam.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MidtermExam.dir
@@ -206,6 +239,8 @@ build Assignment1_Midterms: phony Assignment1_Midterms.exe
 
 build MidtermExam: phony MidtermExam.exe
 
+build Quiz1_Midterm: phony Quiz1_Midterm.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -214,7 +249,7 @@ build MidtermExam: phony MidtermExam.exe
 #############################################
 # Folder: C:/Users/MarieJuana/CLionProjects/CompilationPrograms/cmake-build-debug
 
-build all: phony Activity1_Midterms.exe Actvity2_Midterms.exe Assignment1_Midterms.exe MidtermExam.exe
+build all: phony Activity1_Midterms.exe Actvity2_Midterms.exe Assignment1_Midterms.exe Quiz1_Midterm.exe MidtermExam.exe
 
 # =============================================================================
 # Built-in targets

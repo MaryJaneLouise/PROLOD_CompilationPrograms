@@ -1,7 +1,9 @@
 # ninja log v5
 2	68	6788987580813671	CMakeFiles/Activity1_Midterms.dir/Activities/Midterms/Activity1.c.obj	d307b34d48c40277
+62	136	6789143864331923	Quiz1_Midterm.exe	2be4a1d4a9b1db8f
 68	143	6788987581530032	Activity1_Midterms.exe	7d76d254c8625131
 77	152	6789124510528132	Assignment1_Midterms.exe	e269e54a230ced01
 1	88	6789013522596718	CMakeFiles/Actvity2_Midterms.dir/Activities/Midterms/Activity2.c.obj	d7fa67cc5f95fabb
 88	165	6789013523349668	Actvity2_Midterms.exe	8023a98bb878c4e7
 2	76	6789124509810048	CMakeFiles/Assignment1_Midterms.dir/Activities/Midterms/Assignment1.c.obj	488b195f8a91783e
+2	62	6789143863623198	CMakeFiles/Quiz1_Midterm.dir/Quizzes/Midterms/Quiz1.c.obj	cfbc925b49e04b70
