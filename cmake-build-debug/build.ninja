@@ -139,6 +139,39 @@ build Assignment1_Midterms.exe: C_EXECUTABLE_LINKER__Assignment1_Midterms_Debug 
   TARGET_IMPLIB = libAssignment1_Midterms.dll.a
   TARGET_PDB = Assignment1_Midterms.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target MidtermExam
+
+
+#############################################
+# Order-only phony target for MidtermExam
+
+build cmake_object_order_depends_target_MidtermExam: phony || CMakeFiles/MidtermExam.dir
+
+build CMakeFiles/MidtermExam.dir/Activities/Midterms/Exam.c.obj: C_COMPILER__MidtermExam_Debug C$:/Users/MarieJuana/CLionProjects/CompilationPrograms/Activities/Midterms/Exam.c || cmake_object_order_depends_target_MidtermExam
+  DEP_FILE = CMakeFiles\MidtermExam.dir\Activities\Midterms\Exam.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\MidtermExam.dir
+  OBJECT_FILE_DIR = CMakeFiles\MidtermExam.dir\Activities\Midterms
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target MidtermExam
+
+
+#############################################
+# Link the executable MidtermExam.exe
+
+build MidtermExam.exe: C_EXECUTABLE_LINKER__MidtermExam_Debug CMakeFiles/MidtermExam.dir/Activities/Midterms/Exam.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\MidtermExam.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = MidtermExam.exe
+  TARGET_IMPLIB = libMidtermExam.dll.a
+  TARGET_PDB = MidtermExam.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -171,6 +204,8 @@ build Actvity2_Midterms: phony Actvity2_Midterms.exe
 
 build Assignment1_Midterms: phony Assignment1_Midterms.exe
 
+build MidtermExam: phony MidtermExam.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +214,7 @@ build Assignment1_Midterms: phony Assignment1_Midterms.exe
 #############################################
 # Folder: C:/Users/MarieJuana/CLionProjects/CompilationPrograms/cmake-build-debug
 
-build all: phony Activity1_Midterms.exe Actvity2_Midterms.exe Assignment1_Midterms.exe
+build all: phony Activity1_Midterms.exe Actvity2_Midterms.exe Assignment1_Midterms.exe MidtermExam.exe
 
 # =============================================================================
 # Built-in targets
