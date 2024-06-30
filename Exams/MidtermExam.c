@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <math.h>
 
-//PROGGRAMMING (20 pts. each)
+//PROGRAMMING (20 pts. each)
 //1) Write a program in C to find the sum of the series 1!/1+2!/2+3!/3+4!/4+5!/5 using the function.
 //This one is little tricky but once you got the formula, it will be easy
 //We will be using arrays here since the digits needs to be repeatedly solved
 void SumSeriesFormula(int limitEquation) {
     //The sum should be started in 0 so that the value will be reset
-    //There is no factorial starting 0 so we will make the value of it as 1
+    //There is no factorial starting 0, so we will make the value of it as 1
     int temporaryNumber;
     float summationFactorial = 0;
     float factorial = 1;

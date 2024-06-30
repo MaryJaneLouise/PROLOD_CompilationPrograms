@@ -2,7 +2,7 @@
 
 void Activity2() {
     int number;
-    int numThousands, numHundeds, numTens, numOnes;
+    int numThousands, numHundreds, numTens, numOnes;
 
     //Creating a dummy number for boolean expression to fix some errors
     int booleanNumber = 0;
@@ -18,7 +18,7 @@ void Activity2() {
         //Using formula in order to get individual values
         //This is the way in getting the module operator or rather the remainder after dividing things
         numThousands = number / 1000;
-        numHundeds = (number % 1000) / 100;
+        numHundreds = (number % 1000) / 100;
         numTens = (number % 100) / 10;
         numOnes = number % 10;
 
@@ -37,7 +37,7 @@ void Activity2() {
             case 9: printf("nine thousand "); break;
         }
 
-        switch (numHundeds) {
+        switch (numHundreds) {
             case 1: printf("one hundred "); break;
             case 2: printf("two hundred "); break;
             case 3: printf("three hundred "); break;
@@ -68,7 +68,7 @@ void Activity2() {
 
             case 2: printf("twenty "); break;
             case 3: printf("thirty "); break;
-            case 4: printf("fourty "); break;
+            case 4: printf("forty "); break;
             case 5: printf("fifty "); break;
             case 6: printf("sixty "); break;
             case 7: printf("seventy "); break;
@@ -90,8 +90,8 @@ void Activity2() {
                 case 9:printf("nine"); break;
             }
 
-            //Checking all of the position of the numbers are 0
-            if (numThousands == 0 && numHundeds == 0 && numTens == 0) {
+            //Checking all the position of the numbers are 0
+            if (numThousands == 0 && numHundreds == 0 && numTens == 0) {
                 printf("zero");
             }
         }
